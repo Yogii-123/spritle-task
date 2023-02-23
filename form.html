@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculation</title>
+    <link rel="stylesheet" href="spritle.css">
+</head>
+<body>
+  <center>
+    <div>
+      <h2 id="title" style="display: none;" class="title">Welcome to the you tell,I do app!</h2>
+    </div>
+    <form>
+    <div id="signup-form" class="sign-form">
+    <h2>Signup Form</h2>
+        <p>Please fill in this form to create an account.</p>
+        <div class="label">
+      <label for="email"><b>Email</b></label>
+      <input type="mail" placeholder="Enter Email" name="email" id="email" required><br></div>
+      <div class="label1">
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="emailpass" required><br>
+      </div><div class="btn">
+        <button type="button" onclick="cancelbtn()">Cancel</button><br>
+        <button type="submit"  onclick="signup()">Sign Up</button></div>
+      </div>
+
+      </form>
+
+
+ 
+   <div id="login-form" style="display: none" class="login-form">
+      <h1>Login  App</h1>
+      <h2>Login</h2>
+      <div class="log-name">
+      <label>Username:</label>
+      <input type="text" id="username" /><br /></div>
+      <div class="log-pass">
+      <label>Password:</label>
+      <input type="password" id="password"/><br /></div>
+      <div class="btn-login">
+          <button onclick="login()">Login</button>
+      </div>
+    </div>
+
+    <div id="master-section" style="display: none" class="login-form">
+      <h2>Master Section</h2>
+      <div class="log-name">
+      <label for="input" > Enter input</label>
+      <input type="text" name="input" id="input" ><br></div>
+      <div class="cal-btn">
+      <button onclick="submit()" value="Add input">calculate</button></div>
+      </div>
+
+    <div id="student-section" style="display: none" class="login-form">
+      <h2>Student Section</h2>
+      <div class="log-name">
+        <h3>output</h3>
+        <p id="output" class="text"></p>
+    </div>
+    <div class="log-name">
+        <h3>activity log</h3>
+        <ul id="log" class="text"></ul>
+    </div>
+    </div>
+    <div id="logout-section" style="display: none" class="btn">
+      <button onclick="logout()">Logout</button>
+    </div>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
